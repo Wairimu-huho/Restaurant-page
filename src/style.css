@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+#content{
+    padding: 10px 10%;
+}
+/*------------------------page-content----------------------*/
+.navigation {
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navigation ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+.navigation ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fffb00d5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navigation ul li a:hover::after{
+    width: 100%;
+}
